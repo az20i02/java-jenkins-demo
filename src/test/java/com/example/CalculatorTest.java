@@ -12,10 +12,9 @@ public class CalculatorTest {
     @Test
     void testAdd() {
         Calculator calc = new Calculator();
-        // WRONG expected value on purpose:
-        assertEquals(6, calc.add(2, 3));
+        int result = calc.add(2, 3);
+        assertEquals(5, result, "2 + 3 should equal 5");
     }
-
 
     @Test
     void testSubtract() {
